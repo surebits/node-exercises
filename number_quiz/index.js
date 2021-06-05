@@ -1,6 +1,5 @@
 const http = require("http");
 const url = require("url");
-const fs = require("fs");
 
 const quiz = [
     [3,1,4,1,5],
@@ -10,7 +9,7 @@ const quiz = [
     [1,2,4,8,16],
 ];
 
-const endpoint = "http://localhost:8080";
+const endpoint = "https://cs472-calc.herokuapp.com/";
 
 http
   .createServer(function (req, res) {
@@ -26,8 +25,6 @@ http
     if (answer) {
         if (question && parseInt(answer) === question[question.length-1]) result++
 
-    
-    // res.write(String(quiz[quizId].slice(0,4)));    
     completed = id == 4;
     id++;
     }
