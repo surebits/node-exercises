@@ -1,1 +1,1 @@
-web: node ./N4/index.js
+web: node ./number_quiz/index.js
