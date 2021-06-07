@@ -2,7 +2,7 @@ const http = require("http");
 const url = require("url");
 const calculator = require('./calculator');
 
-const endpoint = "http://localhost:8080";
+const endpoint = "https://cs472-simp-calc.herokuapp.com";
 
 http
   .createServer(function (req, res) {
