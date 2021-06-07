@@ -1,2 +1,2 @@
-web: node ./number_quiz/index.js
+web: node ./calculator/index.js
 api: node ./calculator/index.js
